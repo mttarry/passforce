@@ -20,7 +20,7 @@ To add account credentials, the user provides the master password, as well as th
 
 `./passforce -m MASTER_PASSWORD -s SITE_NAME -n USERNAME -pSITE_PASSWORD` 
 
-Note that SITE_PASSWORD must come immediately after the `-p` option. This is because a user may also opt to have PassForce generate a 128-character password for them, like so: 
+Note that SITE_PASSWORD must come immediately after the `-p` option (no space). This is because a user may also opt to have PassForce generate a 128-character password for them, like so: 
 
 `./passforce -m MASTER_PASSWORD -s SITE_NAME -n USERNAME -p -g` 
 
@@ -38,7 +38,7 @@ To delete account credentials, the user provides the master password along with 
 `./passforce -m MASTER_PASSWORD -s SITE_NAME -d` 
 
 ### Updating Account Credentials
-Update account credentials is similar to adding credentials, except the user also provides the `-u` option. 
+Updating account credentials is similar to adding credentials, except the user also provides the `-u` option. 
 
 `./passforce -m MASTER_PASSWORD -s SITE_NAME -n USERNAME -pPASSWORD -u` 
 
